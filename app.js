@@ -30,9 +30,11 @@ humidity.innerHTML = ` Humididy`
              ${weatherData.weather[0].main} </h1>
               `
             wind.innerHTML = ` Wind :  
-            ${weatherData.wind.speed} % `
+            <span>
+            ${weatherData.wind.speed} %
+            </span>`
             humidity.innerHTML = ` Humidity : 
-            ${weatherData.main.humidity}  %`
+           <span> ${weatherData.main.humidity}  %  </span>`
             switch (weatherData.weather[0].main) {
                 case "Cloud":
                 tempImg.src = "/images/cloud.png"
